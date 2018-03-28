@@ -1,6 +1,11 @@
 
 
 
+
+
+
+
+
 (function searchGifs () {
   var xhr = new XMLHttpRequest();
   var btn = document.getElementById('btn');
