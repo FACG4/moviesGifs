@@ -30,16 +30,26 @@ function movieSearch(){
     var image = 'http://image.tmdb.org/t/p/w300/' + result.poster_path;
     var img = document.createElement('img');
     img.src = image;
+    img.id = 'movie-poster';
+
     var div = document.getElementById('result');
     var span = document.createElement('span');
     span.id = 'title';
     span.textContent = result.title;
     var newButton = document.createElement('button');
     newButton.textContent = 'Giphy';
+    newButton.id ='giphy-button';
+    var btnDiv = document.createElement('div');
+    var imgDiv = document.createElement('div');
+    var spanDiv = document.createElement('div');
 
-    div.appendChild(newButton);
-    div.appendChild(img);
-    div.appendChild(span);
+    btnDiv.appendChild(newButton);
+    imgDiv.appendChild(img);
+    spanDiv.appendChild(span);
+
+    div.appendChild(spanDiv)
+    div.appendChild(imgDiv)
+    div.appendChild(btnDiv)
 
     newButton.addEventListener('click', function(e){
       var gihpyUrl = "http://api.giphy.com/v1/gifs/search?q=" + result.title + '&limit=10' + "&api_key=Ju3NuG8L17eBWI3hyZ71jiL3KVQGVTJY";
