@@ -1,6 +1,9 @@
 What!
+
 The website gives the user the ability to search for any movie he likes. Which will, in turn, give him/her information about this movie and the top casts of it, along with the movies' poster, rate, and gifs for each cast.
+
 How!
+
 We Used 2 API's
 Giphy
 Which provides a free and public API key for small applications.
