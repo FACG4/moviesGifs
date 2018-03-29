@@ -20,11 +20,20 @@ body {
     background-attachment: fixed;
 }
 
+li{
+  list-style: none;
+}
 
-img {
+#result img {
   margin: 20px 20px 20px 2px;
-  width: 100px;
-  height:100px;
+  width: 200px;
+  height:300px;
+}
+
+#giphy-container img {
+  width: 150px;
+  height: 150px;
+  margin: 1%;
 }
 
 input{
