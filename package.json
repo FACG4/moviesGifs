@@ -1,0 +1,23 @@
+{
+  "name": "moviesGifs",
+  "version": "1.0.0",
+  "description": "What!",
+  "main": "index.js",
+  "scripts": {
+    "test": "tapes tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FACG4/moviesGifs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FACG4/moviesGifs/issues"
+  },
+  "homepage": "https://github.com/FACG4/moviesGifs#readme",
+  "devDependencies": {
+    "tapes": "^4.1.0"
+  }
+}
