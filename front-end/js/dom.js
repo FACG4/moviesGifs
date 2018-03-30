@@ -53,25 +53,11 @@ function movieSearch(){
 
     resultDiv.appendChild(ul);
 
-    // var span = document.createElement('span');
-    // span.id = 'title';
-    // span.textContent = result.title;
     var newButton = document.createElement('button');
     newButton.textContent = 'Giphy';
     newButton.id ='giphy-button';
     resultDiv.appendChild(newButton);
-    // var btnDiv = document.createElement('div');
-    // var imgDiv = document.createElement('div');
-    // var spanDiv = document.createElement('div');
-
-    // btnDiv.appendChild(newButton);
-    // imgDiv.appendChild(img);
-    // spanDiv.appendChild(span);
-
-    // div.appendChild(spanDiv)
-    // div.appendChild(imgDiv)
-    // div.appendChild(btnDiv)
-
+   
     newButton.addEventListener('click', function(e){
       var gihpyUrl = "http://api.giphy.com/v1/gifs/search?q=" + result.title + '&limit=10' + "&api_key=Ju3NuG8L17eBWI3hyZ71jiL3KVQGVTJY";
       fetch(gihpyUrl,function(response){
